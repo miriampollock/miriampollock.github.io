@@ -23,7 +23,7 @@ repository               : "miriampollock/miriampollock.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/headshot.jpg"
+  avatar           : "/images/headshot.jpg"
   name             : "Miriam Pollock"
   pronouns         : # example: "she/her"  
   bio              : "PhD Candidate, School of Slavonic and East European Studies (SSEES), University College London (UCL)"
