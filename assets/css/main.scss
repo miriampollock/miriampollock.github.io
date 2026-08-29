@@ -39,16 +39,8 @@
 ;
 /* Custom CSS Overrides */
 
-/* Force global font size reduction across all content areas */
-html, 
-body, 
-.page__content, 
-.archive {
-  font-size: 14px !important; /* Forces fixed pixel size instead of relative em/rem */
-}
-
-/* Ensure paragraph text and list items scale down nicely */
-.page__content p, 
+/* Reduce main body text size (excludes sidebar) */
+.page__content p,
 .page__content li,
 .archive p,
 .archive li {
@@ -56,6 +48,20 @@ body,
   line-height: 1.5 !important;
 }
 
+/* Make subheaders smaller within page content */
+.page__content h2 {
+  font-size: 1.15rem !important;
+}
+
+.page__content h3 {
+  font-size: 1.05rem !important;
+}
+
+.page__content h4 {
+  font-size: 0.95rem !important;
+}
+
+/* Hide the bottom teal feed bar */
 .page__footer,
 .page__footer-follow {
   display: none !important;
