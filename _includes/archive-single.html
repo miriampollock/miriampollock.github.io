@@ -15,13 +15,13 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
-    <h3 class="archive__item-title" itemprop="headline" style="margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; line-height: 1.1 !important; color: #222 !important;">
-      {{ title }}
+<h3 class="archive__item-title" itemprop="headline" style="margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; line-height: 1.1 !important;">
+      <span style="color: #222 !important; text-decoration: none !important; cursor: default !important;">{{ title }}</span>
     </h3>
 
     <div class="archive__item-excerpt" itemprop="description" style="margin-top: 0px !important; padding-top: 0px !important; line-height: 1.15; font-size: 1rem; padding-left: 1.25rem;">
-      <div style="margin: 0 !important; padding: 0 !important;">{{ post.content }}</div>
+      <div style="margin: 0 !important; padding: 0 !important; margin-top: -2px !important;">{{ post.content }}</div>
     </div>
-
+    
   </article>
 </div>
