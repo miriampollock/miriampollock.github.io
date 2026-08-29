@@ -39,10 +39,20 @@
 ;
 /* Custom CSS Overrides */
 
+/* Force global font size reduction across all content areas */
+html, 
+body, 
 .page__content, 
+.archive {
+  font-size: 14px !important; /* Forces fixed pixel size instead of relative em/rem */
+}
+
+/* Ensure paragraph text and list items scale down nicely */
 .page__content p, 
-.page__content li {
-  font-size: 0.88rem !important;
+.page__content li,
+.archive p,
+.archive li {
+  font-size: 14px !important;
   line-height: 1.5 !important;
 }
 
