@@ -12,5 +12,7 @@ citation: 'Pollock, M. (2026). "The impact of variation in multilevel regime typ
 
 R&R, *Demokratizatsiya*.
 
+<!--
 ### Abstract
-<!-- You can paste your paper abstract here -->
+You can paste your paper abstract here 
+-->
