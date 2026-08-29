@@ -12,12 +12,12 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item" style="margin-bottom: 1rem;">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-
-  <!-- Title: Overrides theme defaults completely -->
-<div style="font-size: 14px !important; font-weight: bold !important; color: #222 !important; line-height: 1.15 !important; margin-top: 0.8rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; cursor: text !important; text-decoration: none !important;">
+<div style="font-size: 14px !important; font-weight: bold !important; color: #222 !important; line-height: 1.1 !important; margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; cursor: text !important; text-decoration: none !important;">
   {{ title }}
+</div>
+
+<div class="archive__item-excerpt" itemprop="description" style="margin-top: 0px !important; padding-top: 0px !important; margin-bottom: 0; line-height: 1.15; font-size: 1rem; padding-left: 1.25rem;">
+  <!-- rest of your Liquid content logic -->
 </div>
 
     <!-- Main Content -->
