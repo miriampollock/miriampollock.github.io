@@ -37,9 +37,10 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
 /* Custom CSS Overrides */
 
-/* Reduce main body text size (excludes sidebar) */
+/* 1. Body Text Sizing (Excludes Sidebar) */
 .page__content p,
 .page__content li,
 .archive p,
@@ -48,40 +49,38 @@
   line-height: 1.5 !important;
 }
 
-/* Subheaders font size reduction */
+/* 2. Subheaders Sizing & Border Removal */
 .page__content h2,
 .archive h2 {
-  font-size: 1.05rem !important; /* Smaller primary subheaders */
+  font-size: 1.05rem !important;
   margin-top: 1em !important;
   margin-bottom: 0.5em !important;
+  border-bottom: none !important;
 }
 
 .page__content h3,
 .archive h3 {
-  font-size: 0.95rem !important; /* Smaller secondary subheaders */
+  font-size: 0.95rem !important;
   margin-top: 0.8em !important;
   margin-bottom: 0.4em !important;
+  border-bottom: none !important;
 }
 
 .page__content h4,
 .archive h4 {
-  font-size: 0.88rem !important; /* Matches body text size */
+  font-size: 0.88rem !important;
+  border-bottom: none !important;
 }
 
-/* Hide the bottom teal feed bar */
+/* 3. Hide Teal Footer Bar */
 .page__footer,
 .page__footer-follow {
   display: none !important;
 }
-/* Remove all horizontal divider lines on pages */
+
+/* 4. Remove All Horizontal Divider Lines */
 .page__content hr,
 .archive hr,
-.page__content h2,
-.archive h2,
-.page__content h3,
-.archive h3,
-.page__content h4,
-.archive h4,
 .archive__item,
 .list__item {
   border: none !important;
@@ -90,7 +89,6 @@
   box-shadow: none !important;
 }
 
-/* Clear pseudo-element lines if generated via CSS ::after/::before */
 .page__content h2::after,
 .archive h2::after,
 .page__content h3::after,
