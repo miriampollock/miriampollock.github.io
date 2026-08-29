@@ -37,6 +37,11 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+/* Completely hide the sticky footer/feed bar */
+.page__footer,
+.page__footer-follow {
+  display: none !important;
+}
 /* Force smaller body text across all main page areas */
 .page__content, 
 .page__content p, 
