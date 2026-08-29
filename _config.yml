@@ -26,9 +26,9 @@ author:
   avatar           : "headshot.jpg"
   name             : "Miriam Pollock"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Candidate, School of Slavonic and East European Studies (SSEES), University College London (UCL)"
+  bio              : "PhD Candidate, School of Slavonic and East European Studies, UCL"
   location         : "London, UK"
-  employer         : "UCL"
+  employer         : # "UCL"
   uri              : "https://profiles.ucl.ac.uk/96020-miriam-pollock"
   email            : "miriam.pollock.21@ucl.ac.uk" 
 
