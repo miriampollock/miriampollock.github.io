@@ -48,17 +48,24 @@
   line-height: 1.5 !important;
 }
 
-/* Make subheaders smaller within page content */
-.page__content h2 {
-  font-size: 1.15rem !important;
+/* Subheaders font size reduction */
+.page__content h2,
+.archive h2 {
+  font-size: 1.05rem !important; /* Smaller primary subheaders */
+  margin-top: 1em !important;
+  margin-bottom: 0.5em !important;
 }
 
-.page__content h3 {
-  font-size: 1.05rem !important;
+.page__content h3,
+.archive h3 {
+  font-size: 0.95rem !important; /* Smaller secondary subheaders */
+  margin-top: 0.8em !important;
+  margin-bottom: 0.4em !important;
 }
 
-.page__content h4 {
-  font-size: 0.95rem !important;
+.page__content h4,
+.archive h4 {
+  font-size: 0.88rem !important; /* Matches body text size */
 }
 
 /* Hide the bottom teal feed bar */
