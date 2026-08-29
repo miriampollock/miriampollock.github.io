@@ -19,8 +19,8 @@ author_profile: true
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+     {% unless title_shown %}
+        <h2 style="text-transform: uppercase; margin-top: 2.5rem !important; margin-bottom: 0.3rem !important; font-size: 1.1rem !important; letter-spacing: 0.05em; border-bottom: none;">{{ category[1].title }}</h2>
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single.html %}
