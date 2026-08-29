@@ -1,7 +1,7 @@
 ---
 title: "Promoting Effective Biosecurity Governance: Using Tripwires to Anticipate and Ameliorate Potentially Harmful Development Trends"
 collection: publications
-category: books
+category: conference paper
 permalink: /publication/2021-09-01-promoting-effective-biosecurity-governance
 date: 2021-09-01
 ---
