@@ -73,3 +73,12 @@
 .page__footer-follow {
   display: none !important;
 }
+/* Remove horizontal lines under section headings */
+.page__content hr,
+.archive hr,
+.page__content h2,
+.archive h2,
+.page__content h3,
+.archive h3 {
+  border-bottom: none !important;
+}
