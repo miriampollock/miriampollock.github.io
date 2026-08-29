@@ -12,4 +12,4 @@ paperurl: 'https://doi.org/10.3233/NICSP200049'
 citation: 'Pollock, M., et al. (2020). "Analytical Strategies to Operationalize Arctic Infrastructure Threat Absorption and Resilience." In <i>Cybersecurity and Resilience in the Arctic</i>, NATO Science for Peace and Security Series, Vol. 58, IOS Press, pp. 200–223.'
 -->
 
-Published in *Cybersecurity and Resilience in the Arctic*, 2020 <small>(with )</small> [[DOI](https://doi.org/10.3233/NICSP200049)]
+Published in *Cybersecurity and Resilience in the Arctic*, 2020 <small>(with J. Hall et al.)</small> [[DOI](https://doi.org/10.3233/NICSP200049)]
