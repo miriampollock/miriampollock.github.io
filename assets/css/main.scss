@@ -37,14 +37,15 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
-
-/* Reduce body text size across pages */
-.page__content {
-  font-size: 0.9em; /* Adjust to 0.85em or 0.95em if you want it smaller or larger */
-}
-
-/* Keeps paragraph text compact */
+/* Force smaller body text across all main page areas */
+.page__content, 
 .page__content p, 
-.page__content li {
+.page__content li,
+.archive,
+.archive p,
+.archive li {
+  font-size: 0.88rem !important;
+  line-height: 1.5 !important;
+}
   font-size: inherit;
 }
