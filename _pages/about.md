@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a PhD candidate at the [UCL School of Slavonic and East European Studies](https://www.ucl.ac.uk/ssees/) funded by a UCL [Research Excellence Scholarship](https://www.ucl.ac.uk/scholarships/research-excellence-scholarship).
+Welcome! I am a PhD candidate at the [UCL School of Slavonic and East European Studies](https://www.ucl.ac.uk/ssees/) funded by a [UCL Research Excellence Scholarship](https://www.ucl.ac.uk/scholarships/research-excellence-scholarship).
 
 I am a comparative political economist who focuses on how firm–government relations shape environmental governance. My doctoral research investigates the political strategies deployed by metals and mining firms to influence local climate, environmental, and sustainability policies. I also evaluate how state environmental posture mediates—or fails to constrain—firm influence at the local level.
 
