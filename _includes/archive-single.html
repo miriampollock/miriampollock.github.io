@@ -21,8 +21,7 @@
 </div>
 
     <!-- Main Content -->
-    <div class="archive__item-excerpt" itemprop="description" style="margin-top: 0; margin-bottom: 0; line-height: 1.25; font-size: 1rem;">
-      {% if post.collection == 'teaching' %}
+    <div class="archive__item-excerpt" itemprop="description" style="margin-top: 0; margin-bottom: 0; line-height: 1.25; font-size: 1rem; padding-left: 1.25rem;">      {% if post.collection == 'teaching' %}
         <p style="margin: 0;"> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
       {% elsif post.collection == 'publications' %}
         {% assign stripped_content = post.content | strip %}
