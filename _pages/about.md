@@ -12,9 +12,6 @@ redirect_from:
 
 I am a PhD Candidate in Political Science at the School of Slavonic and East European Studies (SSEES), University College London (UCL). 
 
-My research focuses on [1–2 sentences on your main research topics, e.g., electoral politics, political economy, or institutional development in East-Central/Eastern Europe].
-
-Prior to joining UCL, I completed my [MSc/BA] in [Field] at [Previous University].
 
 ---
 
