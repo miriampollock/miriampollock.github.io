@@ -7,31 +7,39 @@
 {% endif %}
 
 {% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% assign title = post.title | markdownify | strip_html %}
 {% else %}
   {% assign title = post.title %}
 {% endif %}
 
-<div style="font-size: 14px !important; font-weight: bold !important; color: #222 !important; line-height: 1.1 !important; margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; cursor: text !important; text-decoration: none !important;">
-  {{ title }}
-</div>
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork" style="margin-bottom: 0.85rem;">
+    
+    <!-- Title -->
+    <div style="font-size: 14px !important; font-weight: bold !important; color: #222 !important; line-height: 1.1 !important; margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; cursor: text !important; text-decoration: none !important;">
+      {{ title }}
+    </div>
 
-<div class="archive__item-excerpt" itemprop="description" style="margin-top: 0px !important; padding-top: 0px !important; margin-bottom: 0; line-height: 1.15; font-size: 1rem; padding-left: 1.25rem;">
-  <!-- rest of your Liquid content logic -->
-</div>
+    <!-- Subtitle / Indented Info -->
+    <div class="archive__item-excerpt" itemprop="description" style="margin-top: 0px !important; padding-top: 0px !important; margin-bottom: 0; line-height: 1.15; font-size: 1rem; padding-left: 1.25rem;">
+      {% if post.read_time %}
+        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+      {% endif %}
 
-    <!-- Main Content -->
-    <div class="archive__item-excerpt" itemprop="description" style="margin-top: 0; margin-bottom: 0; line-height: 1.25; font-size: 1rem; padding-left: 1.25rem;">      {% if post.collection == 'teaching' %}
-        <p style="margin: 0;"> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+      {% if post.collection == 'teaching' %}
+        <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
       {% elsif post.collection == 'publications' %}
-        {% assign stripped_content = post.content | strip %}
-        {% if stripped_content != "" %}
-          {{ post.content }}
-        {% elsif post.venue %}
-          <p style="margin: 0;">Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% if post.excerpt and post.excerpt != "" %}
+          <p style="margin: 0;">{{ post.excerpt | markdownify }}</p>
+        {% elsif post.citation and post.paperurl %}
+          <p style="margin: 0;">Published in {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
+        {% elsif post.citation %}
+          <p style="margin: 0;">Published in {{ post.citation }}</p>
+        {% elsif post.paperurl %}
+          <p style="margin: 0;">Download <a href="{{ post.paperurl }}"><u>here</u></a></p>
         {% endif %}
       {% elsif post.date %}
-        <p class="page__date" style="margin: 0;"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+        <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%Y" }}</time></p>
       {% endif %}
     </div>
 
