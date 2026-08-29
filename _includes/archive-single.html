@@ -15,21 +15,19 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
-    <!-- Title -->
-    <h3 class="archive__item-title" itemprop="headline" style="margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; line-height: 1.1 !important;">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
+    <!-- Title (Plain Text, No Hyperlink) -->
+    <h3 class="archive__item-title" itemprop="headline" style="margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; line-height: 1.1 !important; color: #222 !important;">
+      {{ title }}
     </h3>
 
-    <!-- Indented Citation Line -->
+    <!-- Indented Publication Info -->
     <div class="archive__item-excerpt" itemprop="description" style="margin-top: 0px !important; padding-top: 0px !important; line-height: 1.15; font-size: 1rem; padding-left: 1.25rem;">
-      {% if post.citation %}
-        <div style="margin: 0 !important; padding: 0 !important;">{{ post.citation | markdownify }}</div>
-      {% elsif post.excerpt %}
+      {% if post.excerpt and post.excerpt != "" %}
         <div style="margin: 0 !important; padding: 0 !important;">{{ post.excerpt | markdownify }}</div>
+      {% elsif post.citation and post.citation != "" %}
+        <div style="margin: 0 !important; padding: 0 !important;">Published in {{ post.citation | markdownify }}</div>
+      {% elsif post.venue %}
+        <p style="margin: 0 !important; padding: 0 !important;">Published in <i>{{ post.venue }}</i>{% if post.date %} ({{ post.date | date: "%Y" }}){% endif %}.{% if post.paperurl %} [<a href="{{ post.paperurl }}"><u>DOI</u></a>]{% endif %}</p>
       {% endif %}
     </div>
 
