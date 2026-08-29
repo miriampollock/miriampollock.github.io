@@ -12,20 +12,35 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork" style="margin-bottom: 0.85rem;">
-    
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="">
+      </div>
+    {% endif %}
+
     <!-- Title -->
-    <div style="font-size: 14px !important; font-weight: bold !important; color: #222 !important; line-height: 1.1 !important; margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; cursor: text !important; text-decoration: none !important;">
-      {{ title }}
-    </div>
-
-    <!-- Subtitle / Indented Info -->
-    <div class="archive__item-excerpt" itemprop="description" style="margin-top: 0px !important; padding-top: 0px !important; margin-bottom: 0; line-height: 1.15; font-size: 1rem; padding-left: 1.25rem;">
-      {% if post.read_time %}
-        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    <h3 class="archive__item-title" itemprop="headline" style="margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; line-height: 1.1 !important;">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
+    </h3>
+    
+    {% if post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
 
+    <!-- Indented Citation Line -->
+    <div class="archive__item-excerpt" itemprop="description" style="margin-top: 0px !important; padding-top: 0px !important; line-height: 1.15; font-size: 1rem; padding-left: 1.25rem;">
       {% if post.collection == 'teaching' %}
         <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
       {% elsif post.collection == 'publications' %}
