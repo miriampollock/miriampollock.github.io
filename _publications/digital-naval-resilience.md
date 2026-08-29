@@ -12,4 +12,4 @@ paperurl: 'https://doi.org/10.3233/NICSP190019'
 citation: 'Wandji, T., et al., & Pollock, M. (2019). "Digital Resilience for Naval Software and Missions." In <i>Resilience and Hybrid Threats: Security and Integrity for the Digital World</i>, NATO Science for Peace and Security Series, Vol. 55, IOS Press, pp. 43–47.'
 {% endcomment %}
 
-Published in *Resilience and Hybrid Threats: Security and Integrity for the Digital World*, 2019 <small>(Wandji, T., et al., & Pollock, M.)</small> [[DOI](https://doi.org/10.3233/NICSP190019)]
+Published in *Resilience and Hybrid Threats: Security and Integrity for the Digital World* (2019). <small>Wandji, T., et al., & Pollock, M.</small> [[DOI](https://doi.org/10.3233/NICSP190019)].
