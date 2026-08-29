@@ -1,6 +1,6 @@
+---
 title: "Development of a population attributable risk screening tool to estimate health consequences of consumer product exposure"
 collection: publications
-category: manuscripts
 permalink: /publication/2024-06-01-population-attributable-risk
 date: 2024-06-01
 venue: 'Environment Systems and Decisions'
