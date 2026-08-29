@@ -8,5 +8,6 @@ venue: 'IEEE Security & Privacy'
 paperurl: 'https://doi.org/10.1109/msec.2019.2922866'
 citation: 'Pollock, Miriam, et al. (2019). "Applying Resilience to Hybrid Threats." <i>IEEE Security & Privacy</i>.'
 ---
-
+-->
 Published in *IEEE Security & Privacy*. [DOI: 10.1109/msec.2019.2922866](https://doi.org/10.1109/msec.2019.2922866)
+<!--
