@@ -73,12 +73,28 @@
 .page__footer-follow {
   display: none !important;
 }
-/* Remove horizontal lines under section headings */
+/* Remove all horizontal divider lines on pages */
 .page__content hr,
 .archive hr,
 .page__content h2,
 .archive h2,
 .page__content h3,
-.archive h3 {
+.archive h3,
+.page__content h4,
+.archive h4,
+.archive__item,
+.list__item {
+  border: none !important;
+  border-top: none !important;
   border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Clear pseudo-element lines if generated via CSS ::after/::before */
+.page__content h2::after,
+.archive h2::after,
+.page__content h3::after,
+.archive h3::after {
+  display: none !important;
+  content: none !important;
 }
