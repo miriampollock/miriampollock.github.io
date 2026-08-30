@@ -10,14 +10,14 @@ author_profile: true
 </div>
 
 <style>
-  /* 1. Category Headers (JOURNAL ARTICLES, WORKING PAPERS, etc.) - Darkest */
+  /* 1. Category Headers - Darkest */
   .wordwrap + h2,
   h2[style*="text-transform: uppercase"] {
     color: #222222 !important;
     font-weight: 700 !important;
   }
 
-  /* 2. Paper Titles (Applying Resilience to Hybrid Threats, etc.) - Medium Dark */
+  /* 2. Paper Titles - Medium Dark */
   .archive__item-title,
   .archive__item-title a {
     color: #495057 !important;
@@ -29,12 +29,14 @@ author_profile: true
     color: #0056b3 !important;
   }
 
-  /* 3. "Published in..." / Excerpt Metadata - Lightest Grey */
+  /* 3. "Published in..." Line & All Sub-elements - Soft Light Grey */
   .archive__item-excerpt,
-  .archive__item-excerpt p,
-  .archive__item-excerpt strong {
+  .archive__item-excerpt *,
+  .archive__item-excerpt strong,
+  .archive__item-excerpt em,
+  .archive__item-excerpt p {
     color: #6c757d !important;
-    font-weight: 400 !important;
+    font-weight: normal !important;
   }
 </style>
 
