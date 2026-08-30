@@ -12,7 +12,7 @@ Welcome! I am a PhD candidate at the [UCL School of Slavonic and East European S
 
 I research the political economy of environmental governance. Particular interests include corporate political activity, multi-level governance, and local government.
 
-My doctoral dissertation examines how business–government relations shape local climate, sustainability, and land-use policy. Specifically, this research maps the political strategies deployed by metals and mining firms to influence municipal decision-making within multi-level institutional frameworks. A key focus is evaluating whether national environmental commitments limit firm influence on the ground.
+My doctoral dissertation examines how business–government relations shape local climate, sustainability, and land-use policy. Specifically, this research maps the political strategies deployed by metals and mining firms to influence municipal decision-making. A key focus is evaluating whether national environmental commitments limit firm influence on the ground.
 
 I hold an MA in Russian and Post-Soviet Politics from UCL SSEES. My MA dissertation, *“Why Were They All Silent?”: Local Government–Business Relations in a Russian Monotown*, was awarded the Frank Carter Memorial Prize for best departmental dissertation in social science or history. I am affiliated with the [Climate Social Science Network (CSSN)](https://cssn.org/) at Brown University and the [Bringing the Sector Back In (BSBI)](https://bringingthesectorbackin.org/) initiative.
 
