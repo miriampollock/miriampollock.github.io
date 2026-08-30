@@ -5,4 +5,8 @@ permalink: /cv/
 author_profile: true
 ---
 
+<!-- 
 [Download my full CV (PDF)](/files/Miriam_Pollock_CV.pdf)
+-->
+
+My full CV is available upon request.
