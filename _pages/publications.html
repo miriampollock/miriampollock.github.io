@@ -10,26 +10,25 @@ author_profile: true
 </div>
 
 <style>
-  /* 1. Category Headers (JOURNAL ARTICLES, etc.) - Darkest */
+  /* Category headings */
   .wordwrap + h2,
   h2[style*="text-transform: uppercase"] {
     color: #111111 !important;
+    font-size: 0.9rem !important;
     font-weight: 700 !important;
+    letter-spacing: 0.04em !important;
   }
 
-  /* 2. Paper Titles - Medium Dark */
+  /* Publication titles */
   .archive__item-title,
   .archive__item-title a {
-    color: #495057 !important;
+    color: #5f6368 !important;
+    font-size: 0.875rem !important;
     font-weight: 600 !important;
     text-decoration: none !important;
   }
-  
-  .archive__item-title a:hover {
-    color: #0056b3 !important;
-  }
 
-  /* 3. Everything else inside the entry (Published in, venue, date, bold text) - Light Grey */
+  /* Bibliographic details */
   .archive__item p,
   .archive__item div,
   .archive__item span,
@@ -38,7 +37,14 @@ author_profile: true
   .archive__item-excerpt,
   .archive__item-excerpt * {
     color: #727b84 !important;
+    font-size: 0.875rem !important;
     font-weight: 400 !important;
+  }
+
+  /* DOI / external links */
+  .archive__item-excerpt a {
+    color: #0366d6 !important;
+    text-decoration: underline !important;
   }
 </style>
 
