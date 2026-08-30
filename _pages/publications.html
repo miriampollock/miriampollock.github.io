@@ -10,7 +10,32 @@ author_profile: true
 </div>
 
 <style>
-  .archive__item-title a { color: #495057 !important; }
+  /* 1. Category Headers (JOURNAL ARTICLES, WORKING PAPERS, etc.) - Darkest */
+  .wordwrap + h2,
+  h2[style*="text-transform: uppercase"] {
+    color: #222222 !important;
+    font-weight: 700 !important;
+  }
+
+  /* 2. Paper Titles (Applying Resilience to Hybrid Threats, etc.) - Medium Dark */
+  .archive__item-title,
+  .archive__item-title a {
+    color: #495057 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+  }
+  
+  .archive__item-title a:hover {
+    color: #0056b3 !important;
+  }
+
+  /* 3. "Published in..." / Excerpt Metadata - Lightest Grey */
+  .archive__item-excerpt,
+  .archive__item-excerpt p,
+  .archive__item-excerpt strong {
+    color: #6c757d !important;
+    font-weight: 400 !important;
+  }
 </style>
 
 {% include base_path %}
