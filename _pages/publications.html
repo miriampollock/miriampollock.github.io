@@ -10,10 +10,10 @@ author_profile: true
 </div>
 
 <style>
-  /* 1. Category Headers - Darkest */
+  /* 1. Category Headers (JOURNAL ARTICLES, etc.) - Darkest */
   .wordwrap + h2,
   h2[style*="text-transform: uppercase"] {
-    color: #222222 !important;
+    color: #111111 !important;
     font-weight: 700 !important;
   }
 
@@ -29,14 +29,16 @@ author_profile: true
     color: #0056b3 !important;
   }
 
-  /* 3. "Published in..." Line & All Sub-elements - Soft Light Grey */
+  /* 3. Everything else inside the entry (Published in, venue, date, bold text) - Light Grey */
+  .archive__item p,
+  .archive__item div,
+  .archive__item span,
+  .archive__item strong,
+  .archive__item em,
   .archive__item-excerpt,
-  .archive__item-excerpt *,
-  .archive__item-excerpt strong,
-  .archive__item-excerpt em,
-  .archive__item-excerpt p {
-    color: #6c757d !important;
-    font-weight: normal !important;
+  .archive__item-excerpt * {
+    color: #727b84 !important;
+    font-weight: 400 !important;
   }
 </style>
 
