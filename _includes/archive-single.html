@@ -15,11 +15,27 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
-<h3 class="archive__item-title" itemprop="headline" style="margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; line-height: 1.1 !important; color: #666 !important; text-decoration: none !important;">
-  {{ title }}
-</h3>
+    <h3 class="archive__item-title" itemprop="headline" style="margin-top: 0.85rem !important; margin-bottom: 0px !important; padding-bottom: 0px !important; line-height: 1.1 !important; color: #666 !important; text-decoration: none !important;">
+      <a style="color: #666 !important; text-decoration: none !important; pointer-events: none !important; cursor: default !important;">{{ title }}</a>
+    </h3>
     
-  <div class="archive__item-excerpt" itemprop="description" style="margin-top: -9px !important; padding-top: 0px !important; line-height: 1.15; font-size: 0.9rem; color: #111 !important; padding-left: 1.25rem;">
+    <div class="archive__item-excerpt" itemprop="description" style="margin-top: -9px !important; padding-top: 0px !important; line-height: 1.15; font-size: 0.9rem; padding-left: 1.25rem;">
+      <!-- Forces all subheaders, bold text, and paragraphs inside content to pitch black -->
+      <style>
+        .archive__item-excerpt, 
+        .archive__item-excerpt *, 
+        .archive__item-excerpt p, 
+        .archive__item-excerpt strong, 
+        .archive__item-excerpt em {
+          color: #000000 !important;
+          font-weight: 600 !important;
+        }
+        /* Keeps your DOI/external links readable while keeping text black */
+        .archive__item-excerpt a {
+          color: #0366d6 !important;
+          text-decoration: underline !important;
+        }
+      </style>
       <div style="margin: 0 !important; padding: 0 !important;">{{ post.content }}</div>
     </div>
     
