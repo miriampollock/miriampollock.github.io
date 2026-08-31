@@ -1,6 +1,8 @@
 ---
 permalink: /
 title: "About"
+seo_title: "Miriam Pollock | Political Economy & Environmental Governance"
+description: "Miriam Pollock is a PhD candidate at UCL SSEES researching the political economy of environmental governance, corporate political activity, and local government."
 excerpt: "About"
 author_profile: true
 hide_title: true
