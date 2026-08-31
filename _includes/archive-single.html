@@ -14,37 +14,14 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h3 class="archive__item-title"
-        itemprop="headline"
-        style="margin-top: 0.75rem !important;
-               margin-bottom: 0 !important;
-               padding-bottom: 0 !important;
-               line-height: 1.25 !important;
-               color: #5f6368 !important;
-               font-size: 0.875rem !important;
-               font-weight: 600 !important;
-               text-decoration: none !important;">
-      <a style="color: #5f6368 !important;
-                font-size: 0.875rem !important;
-                text-decoration: none !important;
-                pointer-events: none !important;
-                cursor: default !important;">
-        {{ title }}
-      </a>
+
+    <h3 class="archive__item-title" itemprop="headline">
+      <span>{{ title }}</span>
     </h3>
-    
-    <div class="archive__item-excerpt"
-         itemprop="description"
-         style="margin-top: 0.1rem !important;
-                padding-top: 0 !important;
-                line-height: 1.35 !important;
-                font-size: 0.875rem !important;
-                padding-left: 1.25rem;">
-      <div style="margin: 0 !important; padding: 0 !important;">
-        {{ post.content }}
-      </div>
+
+    <div class="archive__item-excerpt" itemprop="description">
+      {{ post.content }}
     </div>
-    
+
   </article>
 </div>
