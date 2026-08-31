@@ -109,12 +109,11 @@
   margin-bottom: 0.25rem;
 }
 
-
 /* ---------- Publications ---------- */
 
 .publications-intro {
   margin-top: 0 !important;
-  margin-bottom: 1.35rem !important;
+  margin-bottom: 1.4rem !important;
 
   font-size: 14px !important;
   line-height: 1.5 !important;
@@ -122,18 +121,21 @@
   color: #555b61;
 }
 
+
+/* Category labels */
+
 .publications-page .publication-category {
-  margin-top: 1.45rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-top: 1.8rem !important;
+  margin-bottom: 0.55rem !important;
   padding: 0 !important;
 
-  font-size: 14px !important;
+  font-size: 12.5px !important;
   line-height: 1.3 !important;
-  font-weight: 600 !important;
-  letter-spacing: 0 !important;
-  text-transform: none !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.055em !important;
+  text-transform: uppercase !important;
 
-  color: #4f555b !important;
+  color: #555b61 !important;
   border-bottom: none !important;
 }
 
@@ -141,9 +143,13 @@
   margin-top: 0 !important;
 }
 
-.publications-page .archive__item-title {
+
+/* Publication titles */
+
+.publications-page .archive__item-title,
+.publications-page .archive__item-title:hover {
   margin-top: 0 !important;
-  margin-bottom: 0.15rem !important;
+  margin-bottom: 0.2rem !important;
   padding: 0 !important;
 
   font-size: 14px !important;
@@ -151,26 +157,30 @@
   font-weight: 600 !important;
 
   color: #60666c !important;
+
   text-decoration: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
 }
 
-.publications-page .archive__item-title:hover,
 .publications-page .archive__item-title span,
 .publications-page .archive__item-title span:hover,
 .publications-page .archive__item-title a,
 .publications-page .archive__item-title a:hover {
-  font-size: inherit !important;
-  font-weight: inherit !important;
-  color: inherit !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #60666c !important;
+
   text-decoration: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
 }
 
+
+/* Bibliographic details */
+
 .publications-page .archive__item-excerpt {
-  margin: 0 0 0.75rem 0 !important;
+  margin: 0 0 0.8rem 0 !important;
   padding: 0 !important;
 
   font-size: 14px !important;
@@ -192,6 +202,9 @@
 .publications-page .archive__item-excerpt strong {
   font-weight: 500 !important;
 }
+
+
+/* DOI / external links */
 
 .publications-page .archive__item-excerpt a {
   color: inherit !important;
