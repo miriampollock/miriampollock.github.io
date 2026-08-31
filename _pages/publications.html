@@ -3,68 +3,40 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+hide_title: true
 ---
 
-<div class="wordwrap" style="margin-top: 0.25rem; margin-bottom: 2rem; font-size: 0.95rem;">
-  You can also find my articles on <a href="https://scholar.google.com/citations?user=xV3XGbwAAAAJ&hl=en">my Google Scholar profile</a>.
-</div>
+<div class="publications-page">
 
-<style>
-  /* Category headings */
-  .wordwrap + h2,
-  h2[style*="text-transform: uppercase"] {
-    color: #111111 !important;
-    font-size: 0.9rem !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.04em !important;
-  }
+  <p class="publications-intro">
+    You can also find my publications on <a href="https://scholar.google.com/citations?user=xV3XGbwAAAAJ&hl=en">my Google Scholar profile</a>.
+  </p>
 
-  /* Publication titles */
-  .archive__item-title,
-  .archive__item-title a {
-    color: #5f6368 !important;
-    font-size: 0.875rem !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-  }
+  {% include base_path %}
 
-  /* Bibliographic details */
-  .archive__item p,
-  .archive__item div,
-  .archive__item span,
-  .archive__item strong,
-  .archive__item em,
-  .archive__item-excerpt,
-  .archive__item-excerpt * {
-    color: #727b84 !important;
-    font-size: 0.875rem !important;
-    font-weight: 400 !important;
-  }
+  {% if site.publication_category %}
+    {% for category in site.publication_category %}
+      {% assign title_shown = false %}
+      {% assign category_posts = site.publications | where: "category", category[0] | sort: "title" | sort: "date" | reverse %}
 
-  /* DOI / external links */
-  .archive__item-excerpt a {
-    color: #0366d6 !important;
-    text-decoration: underline !important;
-  }
-</style>
+      {% for post in category_posts %}
+        {% unless title_shown %}
+          <h2 class="publication-category">{{ category[1].title }}</h2>
+          {% assign title_shown = true %}
+        {% endunless %}
 
-{% include base_path %}
+        {% include archive-single.html %}
+      {% endfor %}
+    {% endfor %}
 
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    {% assign category_posts = site.publications | where: "category", category[0] | sort: "title" | sort: "date" | reverse %}
-    {% for post in category_posts %}
-      {% unless title_shown %}
-        <h2 style="text-transform: uppercase; margin-top: 1.75rem !important; margin-bottom: 0.3rem !important; font-size: 1.0rem !important; font-weight: 600 !important; letter-spacing: 0.05em; border-bottom: none;">{{ category[1].title }}</h2>
-        {% assign title_shown = true %}
-      {% endunless %}
+  {% else %}
+
+    {% assign sorted_posts = site.publications | sort: "title" | sort: "date" | reverse %}
+
+    {% for post in sorted_posts %}
       {% include archive-single.html %}
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% assign sorted_posts = site.publications | sort: "title" | sort: "date" | reverse %}
-  {% for post in sorted_posts %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+
+  {% endif %}
+
+</div>
