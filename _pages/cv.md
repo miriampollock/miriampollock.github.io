@@ -3,10 +3,11 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
+hide_title: true
 ---
 
-<!-- 
-[Download my full CV (PDF)](/files/Miriam_Pollock_CV.pdf)
--->
+<div class="cv-page">
 
-Available upon request. Please email miriam.pollock@ucl.ac.uk.
+My CV is available upon request. Please email [miriam.pollock.21@ucl.ac.uk](mailto:miriam.pollock.21@ucl.ac.uk).
+
+</div>
