@@ -6,8 +6,8 @@ author_profile: true
 hide_title: true
 ---
 
-<div class="teaching-page">
-
+<div class="teaching-page" markdown="1">
+  
 I serve or have served as a Postgraduate Teaching Assistant (PGTA) at UCL for the following:
 
 ### 2026–2027 Academic Year
