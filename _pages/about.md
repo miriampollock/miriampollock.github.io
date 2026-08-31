@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-<div class="about-page">
+<div class="about-page" markdown="1">
+
 Welcome! I am a PhD candidate at the [UCL School of Slavonic and East European Studies (SSEES)](https://www.ucl.ac.uk/ssees/) supported by a [UCL Research Excellence Scholarship](https://www.ucl.ac.uk/scholarships/research-excellence-scholarship).
 
 I research the political economy of environmental governance. Particular interests include corporate political activity, multi-level governance, and local government.
