@@ -23,7 +23,7 @@ My doctoral dissertation examines how business–government relations shape loca
 
 ### Background
 
-I received my MA in Russian and Post-Soviet Politics from UCL SSEES. My MA dissertation, *“Why Were They All Silent?”: Local Government–Business Relations in a Russian Monotown*, was awarded the Frank Carter Memorial Prize for best departmental dissertation in social science or history. I am affiliated with the [Climate Social Science Network (CSSN)](https://cssn.org/) at Brown University and the [Bringing the Sector Back In (BSBI)](https://bringingthesectorbackin.org/) initiative.
+I received my MA in Russian and Post-Soviet Politics from UCL SSEES. My MA dissertation, *“Why Were They All Silent?”: Local Government–Business Relations in a Russian Monotown*, was awarded the Frank Carter Memorial Prize for best departmental dissertation in social science or history. I am affiliated with the [Climate Social Science Network (CSSN)](https://cssn.org/) at Brown University.
 
 Previously, I worked as a commodities pricing reporter specialising in steel markets across Russia, Ukraine, and Turkey, and as a research social scientist for the [US Army Corps of Engineers](https://www.erdc.usace.army.mil/) focusing on environmental resilience. I hold a BA in [Slavic Languages and Literatures](https://dlcl.stanford.edu/departments/slavic-languages-and-literatures) and in [Classics](https://classics.stanford.edu/) from [Stanford University](https://www.stanford.edu/).
 
